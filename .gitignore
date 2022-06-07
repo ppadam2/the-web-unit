@@ -13,4 +13,5 @@
 .env.test.local
 .env.production.local
 
+.github/
 npm-debug.log*
