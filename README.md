@@ -8,3 +8,4 @@ Technologies used:
 - React
 - Material design
 - Firebase
+- Git
