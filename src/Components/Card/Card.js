@@ -13,7 +13,7 @@ export default function ActionAreaCard() {
         <CardMedia
           component="img"
           height="240"
-          image="/assets/images/Lawdepot/LawDepot-Homepage.jpg"
+          image="/assets/images/LawDepot/LawDepot-Homepage.jpg"
           alt="LawDepot"
         />
         <CardContent>
