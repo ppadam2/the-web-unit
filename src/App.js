@@ -1,7 +1,9 @@
+import ImageList from "./Components/ImageList/ImageList.js";
+
 function App() {
   return (
     <div className="App">
-      The Imaginary Unit
+      <ImageList />
     </div>
   );
 }
