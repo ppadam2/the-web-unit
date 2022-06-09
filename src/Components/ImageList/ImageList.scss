@@ -10,9 +10,11 @@ body {
     }
 
     .MuiImageList-root {
+        position: absolute;
         width: calc(100vw - 17px);
         height: 100vh;
         scroll-behavior: smooth;
+        background-color: #121212;
 
         .MuiImageListItem-root {
             cursor: pointer;

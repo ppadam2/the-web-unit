@@ -192,7 +192,6 @@ export default function StandardImageList() {
                         src={`${item.img}`}
                         srcSet={`${item.img}`}
                         alt={item.title}
-                        loading="lazy"
                         onClick={() => updateModal(item.id)}
                     />
                 </ImageListItem>

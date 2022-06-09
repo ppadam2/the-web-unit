@@ -11,7 +11,9 @@ export default function Header() {
             <Toolbar>
                 <Drawer />
                 <Typography variant="h6"
-                    component="div" sx={{ flexGrow: 1 }}>
+                    component="div" sx={{ flexGrow: 1, cursor: "pointer" }}
+                    onClick={() => window.location.reload()}
+                    >
                     The Imaginary Unit
                 </Typography>
             </Toolbar>
