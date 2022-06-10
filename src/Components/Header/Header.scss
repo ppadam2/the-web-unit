@@ -3,8 +3,9 @@
 header {
     background-color: #121212 !important;
     
-    &.css-hip9hq-MuiPaper-root-MuiAppBar-root {
-        box-shadow: none;
+    &.css-hip9hq-MuiPaper-root-MuiAppBar-root,
+    &.css-1x7skt0 {
+        box-shadow: none !important;
     }
 
     .MuiTypography-root {
