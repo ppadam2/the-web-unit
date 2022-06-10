@@ -1,7 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 header {
     background-color: #121212 !important;
+    
+    &.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+        box-shadow: none;
+    }
 
     .MuiTypography-root {
-        font-family: "Lato", sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .header-text {
+        margin: 10px auto 0;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        span {
+            background-color: white;
+            color: black;
+            padding: 6px;
+        }
+
+        .css-3y29jb-MuiTypography-root {
+            letter-spacing: 3px;
+        }
     }
 }

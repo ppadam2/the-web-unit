@@ -1,7 +1,7 @@
 .mouse {
-    height: 60px;
-    width: 32px;
-    background-color: rgb(10 25 41 / 86%);
+    height: 30px;
+    width: 20px;
+    background-color: rgb(10 25 41);
     border: 3px solid white;
     border-radius: 32px;
     position: fixed;
@@ -9,7 +9,7 @@
     left: 49%;
 
     .scrollWheel {
-        height: 20px;
+        height: 7px;
         width: 2px;
         background: white;
         position: absolute;
@@ -19,7 +19,7 @@
         top: 10px;
         border-radius: 1px;
         transform: scaleY(0);
-        animation: scroll 2s linear infinite;
+        animation: scroll 2.5s linear infinite;
     }
 }
 

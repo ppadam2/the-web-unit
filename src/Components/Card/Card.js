@@ -1,30 +1,39 @@
-import * as React from 'react';
+import React, {useCallback} from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import "./Card.scss";
 
-export default function ActionAreaCard() {
+const StandardCard = (props) => {
+  const navigate  = useNavigate();
+  const handleOnClick = useCallback(() => navigate (props.goTo, {replace: false}), [navigate]);
+  const openNewWindow = () => { window.open(props.goTo) }
+
   return (
-    <Card sx={{ maxWidth: 345, margin: "100px auto 0",  }}>
+    <>
+    <Card className="card" onClick={props.isLink === "false" ? handleOnClick : openNewWindow}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="240"
-          image="/assets/images/LawDepot/LawDepot-Homepage.jpg"
-          alt="LawDepot"
+          image={props.imageLink}
+          alt={props.title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            LawDepot
+            {props.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Online legal document service provider
+            {props.description}
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
+    </>
   );
 }
+
+export default StandardCard;

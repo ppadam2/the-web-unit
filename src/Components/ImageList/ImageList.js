@@ -6,9 +6,10 @@ import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import CloseIcon from '@mui/icons-material/Close';
 import Mouse from '../Mouse/Mouse.js'
 import "./ImageList.scss";
+import Header from "../Header/Header.js";
 
 export default function StandardImageList() {
-    const itemData = [ // To Do: Figure out a way to fetch this data programmatically, generate id sequence from 1
+    const itemData = [
         {
             img: '/assets/images/LawDepot/Change-Email-Address.PNG',
             title: 'Change Email Address',
@@ -185,6 +186,8 @@ export default function StandardImageList() {
     }
 
     return (
+        <>
+        <Header />
         <ImageList sx={{ width: 1250, height: 600 }} cols={2} rowHeight={400}>
             {itemData.map((item) => (
                 <ImageListItem key={item.img}>
@@ -199,6 +202,7 @@ export default function StandardImageList() {
             <Mouse />
             <Modal imageId={state.imageId} alt={state.alt} src={state.src} visible={state.visible} updateModal={updateModal} />
         </ImageList>
+        </>
     );
 }
 

@@ -1,0 +1,16 @@
+.card {
+    width: 330px;
+    min-width: 330px;
+    height: auto;
+    margin: 20px;
+
+    .css-h93ljk-MuiTypography-root {
+        font-family: monospace;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-out;
+        border: 2px solid #cccccc;
+    }
+}
