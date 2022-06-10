@@ -9,7 +9,7 @@ import "./Card.scss";
 
 const StandardCard = (props) => {
   const navigate  = useNavigate();
-  const handleOnClick = useCallback(() => navigate (props.goTo, {replace: false}), [navigate]);
+  const handleOnClick = useCallback(() => navigate (props.goTo, {replace: false}), [navigate, props.goTo]);
   const openNewWindow = () => { window.open(props.goTo) }
 
   return (
