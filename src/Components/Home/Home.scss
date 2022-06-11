@@ -1,5 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
 .cardList {
     margin-top: 60px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.err {
+    color: #ff6;
+    display: block;
+    width: 320px;
+    margin: 0 0 0 40px;
+    line-height: 2;
+    text-transform: uppercase;
+    animation: crawl 60s linear;
+    position: fixed;
+    top: 700px;
+    font-weight: 600;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    perspective: 400px;
+    font-size: 200%;
+}
+
+@keyframes crawl {
+    0% {
+        top: 700px;
+    }
+
+    100% {
+        top: -6000px;
+    }
 }
