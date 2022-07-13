@@ -18,5 +18,22 @@
   <div id="root"></div>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r58/three.min.js"></script>
   <script defer src="./particleEffect.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyB4po4_vSzLwKNurP2T9X6GE1NV3cbzXoI",
+      authDomain: "theimaginaryunit-6f31a.firebaseapp.com",
+      projectId: "theimaginaryunit-6f31a",
+      storageBucket: "theimaginaryunit-6f31a.appspot.com",
+      messagingSenderId: "841397586202",
+      appId: "1:841397586202:web:91b98d800124ea412f04a3",
+      measurementId: "G-KNGDB9ZRZW"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
